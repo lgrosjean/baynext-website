@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "A platform designed to simplify MMM training, manage dataset versions, and help analyze marketing ROI with modern tools for data-driven marketers.",
   keywords: ["MMM", "Marketing Mix Modeling", "ROI Analysis", "Marketing Analytics", "Data Science"],
-  authors: [{ name: "Baynext Team" }],
+  authors: [{ name: "Baynext Team" }, { name: "Léo Grosjean"}],
   creator: "Baynext",
   publisher: "Baynext",
   formatDetection: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://baynext.com"),
+  metadataBase: new URL("https://baynext.tech"),
   alternates: {
     canonical: "/",
   },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Baynext - Operationalize MMM at Scale",
     description:
       "A platform designed to simplify MMM training, manage dataset versions, and help analyze marketing ROI with modern tools for data-driven marketers.",
-    url: "https://baynext.com",
+    url: "https://baynext.tech",
     siteName: "Baynext",
     images: [
       {
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     initialScale: 1,
     maximumScale: 1,
   },
-    generator: 'v0.dev'
+    // generator: 'v0.dev'
 }
 
 export default function RootLayout({
