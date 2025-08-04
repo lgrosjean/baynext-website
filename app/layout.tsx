@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -104,6 +105,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#06B6D4" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
       </head>
+      <Analytics/>
       <body className={inter.className}>{children}</body>
     </html>
   )
