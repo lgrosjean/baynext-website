@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Zap } from "lucide-react";
 import { MagneticButton } from "@/components/magnetic-button";
 
+const consoleUrl = process.env.VERCEL ? "https://console.baynext.tech" : "http://localhost:3000";
+
 export default function SiteHeader() {
     return (
         <header className="relative z-50 border-b border-cyan-500/20 bg-black/80 backdrop-blur-sm">
@@ -31,13 +33,13 @@ export default function SiteHeader() {
               magneticStrength={0.2}
               className="text-cyan-400 hover:text-cyan-300 hover:bg-cyan-400/10"
             >
-              <Link href={"https://console.baynext.tech/login"}>Login</Link>
+              <Link href={`${consoleUrl}/login`}>Login</Link>
             </MagneticButton>
             <MagneticButton
               magneticStrength={0.3}
               className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white border-0 shadow-lg shadow-cyan-500/25"
             >
-              <Link href={"https://console.baynext.tech/signup"}>Sign Up</Link>
+              <Link href={`${consoleUrl}/signup`}>Sign Up</Link>
             </MagneticButton>
           </div>
         </div>
