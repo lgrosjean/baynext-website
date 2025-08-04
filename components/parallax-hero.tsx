@@ -138,11 +138,11 @@ export function ParallaxHero() {
               magneticStrength={0.4}
               className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-300 group border-0"
             >
-              Start Free Trial
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              Start Now
+              <Play className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </MagneticButton>
 
-            <MagneticButton
+            {/* <MagneticButton
               size="lg"
               variant="outline"
               magneticStrength={0.3}
@@ -150,7 +150,7 @@ export function ParallaxHero() {
             >
               <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
               Watch Demo
-            </MagneticButton>
+            </MagneticButton> */}
           </div>
 
           {/* Floating Elements with Enhanced Parallax */}
