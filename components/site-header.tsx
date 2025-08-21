@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Zap } from "lucide-react";
 import { MagneticButton } from "@/components/magnetic-button";
 
-const consoleUrl = process.env.VERCEL ? "https://console.baynext.tech" : "http://localhost:3000";
+const consoleUrl = process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? "https://console.baynext.tech" : "http://localhost:3000";
 
 export default function SiteHeader() {
     return (
